@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800" prefWidth="1400" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+    <children>
+        <BorderPane prefHeight="800" prefWidth="1400" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <center>
+                <StackPane fx:id="mainContent" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            </center>
+            <left>
+                <VBox alignment="TOP_CENTER" prefHeight="625.0" styleClass="sidebar" stylesheets="@../css/sidebar.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button id="home" fx:id="btnHome" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#homeOnAction" prefHeight="109.0" prefWidth="147.0" styleClass="sidebar-button" text="Tìm Kiếm">
+                            <font>
+                                <Font name="Arial Bold" size="19.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="9.0" fitWidth="114.0" layoutX="52.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/btnBreak.png" />
+                            </image>
+                        </ImageView>
+                        <Button id="home" fx:id="btnMatch" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#matchOnAction" prefHeight="109.0" prefWidth="147.0" styleClass="sidebar-button" text="Thêm Trận Đấu">
+                            <font>
+                                <Font name="Arial Bold" size="19.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="9.0" fitWidth="114.0" layoutX="52.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/btnBreak.png" />
+                            </image>
+                        </ImageView>
+                        <Button id="home" fx:id="btnInformation" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#informationOnAction" prefHeight="109.0" prefWidth="147.0" styleClass="sidebar-button" text="Thông Tin">
+                            <font>
+                                <Font name="Arial Bold" size="19.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="9.0" fitWidth="114.0" layoutX="52.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/btnBreak.png" />
+                            </image>
+                        </ImageView>
+                        <Button id="setting" fx:id="btnSetting" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#settingOnAction" prefHeight="109.0" prefWidth="147.0" styleClass="sidebar-button" text="Cài Đặt">
+                            <font>
+                                <Font name="System Bold" size="19.0" />
+                            </font>
+                        </Button>
+                        <Button id="setting" fx:id="btnLogout" alignment="BOTTOM_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleLogOutButton" prefHeight="109.0" prefWidth="147.0" styleClass="sidebar-button" text="Thoát">
+                            <font>
+                                <Font name="System Bold" size="19.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </left>
+        </BorderPane>
+    </children>
+</AnchorPane>

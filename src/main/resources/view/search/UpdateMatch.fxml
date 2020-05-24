@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="700" prefWidth="1200"
+	stylesheets="@../../css/main.css"
+	xmlns="http://javafx.com/javafx/9.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.search.UpdateMatchController">
+	<children>
+		<BorderPane prefHeight="700" prefWidth="1200"
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="80.0"
+			AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<center>
+				<BorderPane prefWidth="1200"
+					BorderPane.alignment="CENTER">
+					<left>
+						<GridPane alignment="CENTER" hgap="15" vgap="15"
+							BorderPane.alignment="CENTER">
+							<children>
+								<Label text="Loại gà" GridPane.columnIndex="0"
+									GridPane.rowIndex="0" />
+								<Label text="Màu áo" GridPane.columnIndex="0"
+									GridPane.rowIndex="1" />
+								<Label text="Màu quần" GridPane.columnIndex="0"
+									GridPane.rowIndex="2" />
+								<Label text="Màu nón" GridPane.columnIndex="0"
+									GridPane.rowIndex="3" />
+								<Label text="Sân chơi" GridPane.columnIndex="0"
+									GridPane.rowIndex="4" />
+								<Label text="Kết quả" GridPane.columnIndex="0"
+									GridPane.rowIndex="5" />
+								<Label text="Cá biệt" GridPane.columnIndex="0"
+									GridPane.rowIndex="6" />
+								<TextField fx:id="tfLoaiga" GridPane.columnIndex="1"
+									prefWidth="300" GridPane.rowIndex="0" editable="false" />
+								<TextField fx:id="tfMauao" GridPane.columnIndex="1"
+									prefWidth="300" GridPane.rowIndex="1" editable="false" />
+								<TextField fx:id="tfMauquan" GridPane.columnIndex="1"
+									prefWidth="300" GridPane.rowIndex="2" editable="false" />
+								<TextField fx:id="tfMaunon" GridPane.columnIndex="1"
+									prefWidth="300" GridPane.rowIndex="3" editable="false" />
+								<TextField fx:id="tfSanchoi" GridPane.columnIndex="1"
+									prefWidth="300" GridPane.rowIndex="4" editable="false" />
+								<TextField fx:id="tfKetqua" GridPane.columnIndex="1"
+									prefWidth="300" GridPane.rowIndex="5" editable="false" />
+								<TextField fx:id="tfThongtinthem"
+									GridPane.columnIndex="1" prefWidth="300" GridPane.rowIndex="6"
+									editable="false" />
+								<Button cancelButton="true" mnemonicParsing="false"
+									GridPane.columnIndex="1" GridPane.rowIndex="7"
+									onAction="#deleteOnAction" text="Xóa trận đấu" />
+							</children>
+						</GridPane>
+					</left>
+					<center>
+						<VBox alignment="CENTER" prefWidth="700" spacing="5.0">
+							<children>
+								<ImageView fx:id="imgCockfighting" fitHeight="700"
+									fitWidth="700" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@../../image/no-image.png" />
+									</image>
+								</ImageView>
+							</children>
+						</VBox>
+					</center>
+				</BorderPane>
+			</center>
+		</BorderPane>
+	</children>
+</AnchorPane>
